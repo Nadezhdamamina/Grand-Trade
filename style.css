@@ -297,22 +297,46 @@ ul {
     width: 50%;
 }
 
-/* principles */
+/* --------------principles------------ */
+
 .principles {
     background-color: var(--dark-green);
 }
 
-.principles__list {
+/* .principles__list {
     padding: 20px 0;
     flex-wrap: wrap;
     width: 100%;
-}
+} 
 
 .list-principles__item {
     padding: 25px;
-    width: 20%;
+    
+}*/
+
+.principles__list {
+    margin-top: 50px;
+    justify-content: center;
 }
 
 .list-principles__heading {
     margin-bottom: 20px;
+}
+
+.list-principles__item {
+    background-color: var(--green);
+    text-align: center;
+    padding: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: all .3s;
+}
+
+.list-principles__item:hover {
+    box-shadow: 0 15px 30px 15px rgba(0,0,0,0.6);
+}
+
+.principles i {
+    font-size: 50px;
 }
