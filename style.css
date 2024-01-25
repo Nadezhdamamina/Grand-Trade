@@ -17,6 +17,7 @@
   --green: rgb(74, 93, 63);
   --light-green: rgb(179, 191, 177);
   --bedge: rgb(243, 210, 157);
+  --transition: all .3s;
 }
 
 html, body {
@@ -120,8 +121,6 @@ ul {
     max-width: 95px;
 }
 
-
-
 .header__logo {
     color: var(--dark-green);
     align-items: center;
@@ -163,56 +162,6 @@ ul {
 
 
 
-/* .burger {
-    position: relative;
-    width: 30px;
-    height: 30px;
-    display: block;
-}
-
-.burger:hover .burger__line {
-    width: 100%;
-    transition: width 0.3s ease-in-out;
-}
-
-.burger__line {
-    position: absolute;
-    display: inline-block;
-    height: 2px;
-    background-color:var( --dark-green);
-    transition: width 0.3s ease-in-out;
-}
-
-.burger__line:nth-child(1) {
-    right: 0;
-    top: 0;
-    width: 100%;
-}
-
-.burger__line:nth-child(2) {
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 80%;
-}
-
-.burger__line:nth-child(3) {
-    right: 0;
-    bottom: 0;
-    width: 40%;} */
-
-/* .test{
-    position: absolute;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    min-width: 0;
-    height: 100%;
-    object-fit: cover;
-    background: url("img/wheat.jpg") center / cover no-repeat;
-} */
-
-
 /* first */
 .first {
     position: relative;
@@ -241,8 +190,12 @@ ul {
 
 .first__heading,
 .about__heading,
-.principles__heading {
-    font-size: 70px;
+.principles__heading,
+.contacts__heading,
+.logistics__heading,
+.export__heading,
+.import__heading {
+    font-size: 4rem;
     font-weight: 700;
 }
 
@@ -259,9 +212,10 @@ ul {
 
 /* abour */
 .about,
-.principles {
+.principles,
+.contacts {
     background-color: var(--light-green);
-    padding: 70px 0;
+    padding: 50px 0;
 }
 
 .about__container {
@@ -277,11 +231,9 @@ ul {
 }
 
 .about__block-left {
-    padding: 30px;
-    flex: 1 0 45%;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    background-color: var(--light-green);
+    padding: 40px;
+    background-color: var(--light-theme-backround);
+    box-shadow: 0 15px 30px 15px rgba(0,0,0,0.4);
     border-radius: 20px;
 }
 
@@ -291,11 +243,12 @@ ul {
 }
 
 .about__block-recht {
-    padding: 30px;
-    flex-wrap: wrap;
+    /* padding: 30px; 
+    flex-wrap: wrap;*/
 }
 
 .about__list {
+    padding: 0;
     flex-wrap: wrap;
     width: 100%;
 }
@@ -303,6 +256,11 @@ ul {
 .list-about__item {
     padding: 20px;
     width: 50%;
+}
+
+.list-about__item i {
+  margin-right: 10px;
+  font-size: 24px;
 }
 
 /* --------------principles------------ */
@@ -347,4 +305,120 @@ ul {
 
 .principles i {
     font-size: 50px;
+}
+
+/* --------------logistics------------ */
+
+.logistics,
+.import,
+.export {
+    padding: 50px 0;
+    color: var(--dark-green);
+    
+}
+
+.logistics__block-recht {
+    background: url("img/logistik.jpg") center / cover no-repeat;
+}
+
+.export__block-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.export__block-bottom img {
+    display: inline-block;
+    max-width: 100%;
+    max-height: 600px;
+    vertical-align: middle;
+}
+
+.export__text,
+.import__text {
+    font-size: 20px;
+    letter-spacing: 0.68px;
+    line-height: 1.5;
+}
+
+.import {
+    padding: 70px 0;
+    color: var(--theme-text);
+    background: url("img/import.png") center / cover no-repeat;
+}
+
+
+
+/* --------------contakts------------ */
+.contacts__item--adress {
+    padding-bottom: 25px;
+}
+
+.contacts__item-heading {
+    margin-bottom: 5px;
+}
+
+.contacts__item-heading i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.contacts__value {
+    color: var(--theme-text);
+    transition: var(--transition);
+}
+
+.contacts__value:hover {
+    color: var(--dark-green);
+}
+
+/* --------------footer------------ */
+.footer {
+    padding: 30px 0;
+    background-color: var(--dark-green);
+}
+
+.footer__logo {
+    max-width: 120px;
+}
+
+.footer a {
+    color: var(--theme-text);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer a:hover {
+    color: var(--bedge);
+    text-decoration: none;
+}
+
+.footer-icons {
+    padding: 0;
+    gap: 20px;
+    list-style: none;
+    display: flex;
+    color: var(--theme-text);
+    font-size: 26px;
+}
+
+#top {
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--light-green);
+    opacity: .5s;
+    color: var(--theme-text);
+    border-radius: 50%;
+    border: 0;
+    font-size: 25px;
+    transition: var(--transition);
+    z-index: 10;
+    display: none;
+}
+
+#top:hover {
+    opacity: 1;
+    background-color: var(--dark-green);
 }
