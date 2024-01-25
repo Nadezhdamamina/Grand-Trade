@@ -100,7 +100,15 @@ ul {
 } */
 
 .header {
-    background-color: var(--light-theme-backround);
+    background-color: var(--light-green);
+}
+
+.row-2 {
+    background-color: var(--bedge);
+}
+
+.row-3 {
+    background-color: var(--green);
 }
 
 .header__container {
