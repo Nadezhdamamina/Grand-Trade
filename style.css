@@ -130,6 +130,10 @@ ul {
     font-weight: 700;
 }
 
+.navbar {
+    background-color: var(--light-green);
+}
+
 .navbar .nav-link {
     
     color: var(--dark-green);
@@ -137,29 +141,23 @@ ul {
     letter-spacing: 0.1rem;
 }
 
+/* .navbar:hover, */
 .navbar .nav-link:hover,
 .navbar .dropdown-menu .dropdown-item:hover {
-    background-color: var(--light-green);
+    background-color: var(--bedge);
 }
 
-.navbar .nav-link.active {
-    background-color: var(--green);
+/* .navbar .nav-link.active {
+    background-color: var(--bedge);
     color: var(--light-theme-backround);
-}
+} */
 
 .navbar .dropdown-menu {
-    background-color: var(--light-theme-backround);
+    background-color: var(--light-green);
     margin-top: 14px;
     border: 0;
     border-radius: 0;
 }
-
-@media only screen and (max-width: 992px) {
-    .navbar .dropdown-menu {
-        padding-left: 1rem;
-    }
-}
-
 
 
 /* first */
@@ -184,7 +182,7 @@ ul {
 
 .first__container {
     position: relative;
-    min-width: 1410px;
+    /* min-width: 1410px; */
     z-index: 5;
 }
 
@@ -228,6 +226,10 @@ ul {
     font-size: 20px;
     letter-spacing: 0.68px;
     line-height: 1.5;
+}
+
+.about__block-top {
+    margin-bottom: 30px;
 }
 
 .about__block-left {
@@ -317,8 +319,34 @@ ul {
     
 }
 
+.logistics__block-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.logistics__block-bottom img {
+    display: inline-block;
+    /*max-width: 100%;*/
+     max-height: 250px; 
+    vertical-align: middle;
+}
+
+/* .logistics__block-recht {
+    max-width: 100%;
+} */
+
 .logistics__block-recht {
-    background: url("img/logistik.jpg") center / cover no-repeat;
+    /*background: url("img/logistik.jpg") center / cover no-repeat;
+     background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 600px; */
+   /* display: inline-block;
+    max-width: 100%; 
+     height: 300px; */
+    /*vertical-align: middle;*/
+    /* background-size: cover;
+    background-position: center; */
 }
 
 .export__block-bottom {
@@ -333,6 +361,7 @@ ul {
     vertical-align: middle;
 }
 
+.logistics__text,
 .export__text,
 .import__text {
     font-size: 20px;
@@ -421,4 +450,60 @@ ul {
 #top:hover {
     opacity: 1;
     background-color: var(--dark-green);
+}
+
+
+
+
+
+@media only screen and (max-width: 992px) {
+    .navbar .dropdown-menu {
+        padding-left: 1rem;
+    }
+
+    .about__text {
+        font-size: 20px;
+    }
+
+    .about__block {
+        font-size: 18px;
+        letter-spacing: 0.58px;
+        line-height: 1.3;
+    }
+
+    .list-about__item {
+        padding: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    .first {
+        padding-top: 100px;
+        height: 400px;
+    }
+
+    .first__heading,
+    .about__heading,
+    .principles__heading,
+    .contacts__heading,
+    .logistics__heading,
+    .export__heading,
+    .import__heading {
+    font-size: 2.5rem;
+    font-weight: 700; 
+    }
+
+    .first__descr {
+        margin-top: 30px;
+        font-size: .75rem;
+    }
+
+    .about__text {
+        font-size: 18px;
+    }
+
+    /* .import__text {
+        color: var(--dark-green);
+    } */
 }
