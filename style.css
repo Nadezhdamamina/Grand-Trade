@@ -90,16 +90,6 @@ ul {
     margin: 0 auto;
 }
 
-/*.flex {
-    display: flex;
-} */
-
-/* .header {
-    position: relative;
-    padding: 5px 0;
-    z-index: 1;
-} */
-
 .header {
     background-color: var(--light-green);
 }
@@ -147,11 +137,6 @@ ul {
     background-color: var(--bedge);
 }
 
-/* .navbar .nav-link.active {
-    background-color: var(--bedge);
-    color: var(--light-theme-backround);
-} */
-
 .navbar .dropdown-menu {
     background-color: var(--light-green);
     margin-top: 14px;
@@ -182,7 +167,6 @@ ul {
 
 .first__container {
     position: relative;
-    /* min-width: 1410px; */
     z-index: 5;
 }
 
@@ -208,7 +192,7 @@ ul {
     
 }
 
-/* abour */
+/* about */
 .about,
 .principles,
 .contacts {
@@ -244,11 +228,6 @@ ul {
     font-weight: 700;
 }
 
-.about__block-recht {
-    /* padding: 30px; 
-    flex-wrap: wrap;*/
-}
-
 .about__list {
     padding: 0;
     flex-wrap: wrap;
@@ -270,17 +249,6 @@ ul {
 .principles {
     background-color: var(--dark-green);
 }
-
-/* .principles__list {
-    padding: 20px 0;
-    flex-wrap: wrap;
-    width: 100%;
-} 
-
-.list-principles__item {
-    padding: 25px;
-    
-}*/
 
 .principles__list {
     margin-top: 50px;
@@ -326,27 +294,8 @@ ul {
 
 .logistics__block-bottom img {
     display: inline-block;
-    /*max-width: 100%;*/
-     max-height: 250px; 
+    max-height: 250px; 
     vertical-align: middle;
-}
-
-/* .logistics__block-recht {
-    max-width: 100%;
-} */
-
-.logistics__block-recht {
-    /*background: url("img/logistik.jpg") center / cover no-repeat;
-     background-size: cover;
-    background-position: center;
-    height: 300px;
-    width: 600px; */
-   /* display: inline-block;
-    max-width: 100%; 
-     height: 300px; */
-    /*vertical-align: middle;*/
-    /* background-size: cover;
-    background-position: center; */
 }
 
 .export__block-bottom {
@@ -374,8 +323,6 @@ ul {
     color: var(--theme-text);
     background: url("img/import.png") center / cover no-repeat;
 }
-
-
 
 /* --------------contakts------------ */
 .contacts__item--adress {
@@ -452,10 +399,6 @@ ul {
     background-color: var(--dark-green);
 }
 
-
-
-
-
 @media only screen and (max-width: 992px) {
     .navbar .dropdown-menu {
         padding-left: 1rem;
@@ -502,8 +445,4 @@ ul {
     .about__text {
         font-size: 18px;
     }
-
-    /* .import__text {
-        color: var(--dark-green);
-    } */
 }
