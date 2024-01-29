@@ -347,6 +347,10 @@ ul {
     color: var(--dark-green);
 }
 
+.contacts__value--adress span {
+    font-weight: 700;
+}
+
 /* --------------footer------------ */
 .footer {
     padding: 30px 0;
